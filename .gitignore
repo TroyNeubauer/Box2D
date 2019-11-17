@@ -3,3 +3,5 @@ imgui.ini
 obj/
 bin/
 **/*.vcxproj*
+Makefile
+
