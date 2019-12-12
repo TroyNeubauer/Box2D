@@ -23,18 +23,28 @@
 
 b2Version b2_version = {2, 3, 2};
 
+
+//Hazel allocation tracker functions
 void* AllocTracker_Allocate(size_t bytes);
 void AllocTracker_Free(void* ptr);
 
 // Memory allocators. Modify these to use your own allocator.
 void* b2Alloc(int32 size)
 {
+#ifdef HZ_DEBUG
 	return AllocTracker_Allocate(size);
+#else
+	return malloc(size);
+#endif
 }
 
 void b2Free(void* mem)
 {
+#ifdef HZ_DEBUG
 	AllocTracker_Free(mem);
+#else
+	free(mem);
+#endif
 }
 
 // You can modify this to use your logging facility.
