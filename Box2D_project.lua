@@ -7,7 +7,6 @@ project 'Box2D'
 	kind 'StaticLib'
 	language 'C++'
 	cppdialect 'C++11'
-	staticruntime 'on'
 
 	files { 'Box2D/**' }
 	includedirs { '.' }
