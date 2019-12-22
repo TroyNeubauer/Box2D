@@ -5,3 +5,10 @@ bin/
 **/*.vcxproj*
 Makefile
 
+
+# Xcode clutter
+**/*.build
+**/*.xcodeproj
+
+# macOS clutter
+.DS_Store
