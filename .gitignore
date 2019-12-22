@@ -12,3 +12,4 @@ Makefile
 
 # macOS clutter
 .DS_Store
+*.pbxproj
