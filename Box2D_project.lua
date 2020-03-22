@@ -8,5 +8,9 @@ project 'Box2D'
 	language 'C++'
 	cppdialect 'C++11'
 
+	targetdir (binLocationOverride.."bin/" .. outputdir .. "/%{prj.name}")
+	objdir (binLocationOverride.."bin-int/" .. outputdir .. "/%{prj.name}")
+
+
 	files { 'Box2D/**' }
 	includedirs { '.' }
