@@ -13,3 +13,10 @@ Makefile
 # macOS clutter
 .DS_Store
 *.pbxproj
+
+#Android
+**/AndroidManifest.xml
+.modules
+**/build.gradle
+**/CMakeLists.txt
+
